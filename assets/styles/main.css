@@ -22,6 +22,11 @@ main {
   max-width: 1140px;
   margin: 0 auto;
 }
+.section-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
 /* Nav Style */
 nav {
   display: flex;
@@ -92,11 +97,6 @@ i.fa-solid.fa-cart-shopping {
 /* Plant Section Styles */
 .plant-content {
   text-align: center;
-}
-.section-title {
-  font-size: 50px;
-  font-weight: bold;
-  margin: 0;
 }
 .plant-description {
   font-size: 22px;
@@ -169,6 +169,114 @@ h1.plants-lover-title {
   color: var(--accent-color);
 }
 
+/* Latest Deal Section Styles */
+section.latest-deal {
+  margin-top: 133px;
+}
+.deal-content {
+  text-align: center;
+}
+.deals-description {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--accent-color);
+  margin: 16px auto;
+  max-width: 888px;
+}
+.row {
+  margin-top: 120px;
+  display: flex;
+  gap: 28px;
+}
+
+.vertical-collage {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.top-img,
+.bottom-image {
+  width: 367px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 22px;
+}
+.right-image {
+  width: 753px;
+  height: 423px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 22px;
+}
+
+.top-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../images/deal-bloom.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-image {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../images/deal-ana.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../images/deal-zabo.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vertical-collage h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+}
+.vertical-collage a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: var(--font-family);
+}
+.right-image h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+}
+.right-image a {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: var(--font-family);
+}
+
 /* Responsive Styles */
 /* Extra small (phones) */
 @media (max-width: 575.98px) {
@@ -216,26 +324,47 @@ h1.plants-lover-title {
     max-width: 336px;
   }
   .plant-list {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 0px;
+    column-gap: 10px;
+    row-gap: 20px;
     margin-top: 28px;
+    padding: 0 10px;
+  }
+  .plant-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
   }
   img.plant-image {
-    width: 171px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
   }
   .plant-name {
     font-size: 18px;
+    margin: 30px 0 5px;
   }
   .plant-price {
     font-size: 16px;
+    margin: 0 0 10px;
   }
   .plant-cart-button {
-    padding: 15px 30px;
-    width: 171px;
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   /* Plants Lover Section */
   section.plants-lover {
-    margin: 40px 15px 143px 15px;
+    margin: 40px 18px 143px 18px;
   }
   .plants-lover-container {
     flex-direction: column;
@@ -253,5 +382,44 @@ h1.plants-lover-title {
   .plants-lover-content ul li {
     font-size: 14px;
     margin-bottom: 16px;
+  }
+
+  /* Latest Deals Section */
+  .deals-description {
+    font-size: 14px;
+    max-width: 336px;
+    font-family: var(--font-family);
+  }
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    margin-top: 50px;
+  }
+  .vertical-collage {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+  .top-img,
+  .bottom-image {
+    width: 100%;
+    height: 200px;
+  }
+  .right-image {
+    width: 100%;
+    height: 200px;
+  }
+  .top-img h3,
+  .bottom-image h3,
+  .right-image h3 {
+    font-size: 20px;
+  }
+  .top-img a,
+  .bottom-image a,
+  .right-image a {
+    font-size: 16px;
   }
 }
