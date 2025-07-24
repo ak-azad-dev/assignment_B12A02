@@ -203,7 +203,8 @@ section.latest-deal {
 }
 .row {
   margin-top: 120px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 28px;
 }
 
@@ -343,7 +344,7 @@ input[type="button"] {
 footer {
   background-color: #f5f8ff;
   display: grid;
-  grid-template-columns: 440px 190px 190px 300px;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   margin: 50px 160px;
 }
 .footer-content img {
@@ -480,7 +481,7 @@ p.footer-description {
     margin: 0 0 16px 0;
   }
   .plants-lover-content ul {
-    padding: 0 0 0 20px;
+    padding: 0 0 0 10px;
   }
   .plants-lover-content ul li {
     font-size: 14px;
@@ -494,7 +495,7 @@ p.footer-description {
     font-family: var(--font-family);
   }
   .row {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     padding: 0 16px;
@@ -533,6 +534,7 @@ p.footer-description {
   }
   h1.subscribe-title {
     font-size: 20px;
+    margin: 0 auto;
   }
   input[type="text"] {
     width: 218px;
