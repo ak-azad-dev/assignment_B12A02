@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #e95a08;
+  --secondary-color: #000000;
+  --accent-color: rgba(0, 0, 0, 0.5);
+  --bg-color: #f5f8ff;
+  --font-family: "Inter", sans-serif;
+}
+body {
+  margin: 0 auto;
+  background-color: var(--bg-color);
+}
+/* Font Styles */
+.noto-serif-regular {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Common Styles */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* Nav Style */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 150px 0 150px;
+}
+img.logo {
+  width: 135px;
+  height: 82px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #8987a1;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: var(--font-family);
+  line-height: 24px;
+}
+.active {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 16px;
+  font-family: var(--font-family);
+  line-height: 24px;
+}
+.cart {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: var(--font-family);
+  line-height: 24px;
+}
+
+/* Hero Section Styles*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 185px 150px 120px 150px;
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.hero-title {
+  font-size: 65px;
+  font-weight: bold;
+  margin: 0;
+}
+.hero-description {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--accent-color);
+  margin: 13px 0 0 0;
+}
