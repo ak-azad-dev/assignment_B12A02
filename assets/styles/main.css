@@ -62,6 +62,9 @@ nav ul li a {
   font-family: var(--font-family);
   line-height: 24px;
 }
+i.fa-solid.fa-cart-shopping {
+  margin-right: 10px;
+}
 
 /* Hero Section Styles*/
 .hero {
@@ -138,4 +141,70 @@ nav ul li a {
   background-color: var(--primary-color);
   border: none;
   margin-top: 30px;
+}
+
+/* Responsive Styles */
+/* Extra small (phones) */
+@media (max-width: 575.98px) {
+  /* Nav Section */
+  .hide {
+    display: none;
+  }
+  nav {
+    margin: 13px 16px;
+  }
+  img.logo {
+    width: 63px;
+    height: 38px;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column-reverse;
+    align-items: end;
+    margin: 0 auto;
+    gap: 28px;
+    margin-top: 28px;
+    margin-bottom: 65px;
+  }
+  img.hero-image {
+    width: 393px;
+    height: auto;
+  }
+  .hero-content {
+    margin: 0 16px;
+  }
+  .hero-title {
+    font-size: 24px;
+  }
+  .hero-description {
+    font-size: 14px;
+  }
+
+  /* Hero Section */
+  .section-title {
+    font-size: 24px;
+  }
+  .plant-description {
+    font-size: 14px;
+    max-width: 336px;
+  }
+  .plant-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0px;
+    margin-top: 28px;
+  }
+  img.plant-image {
+    width: 171px;
+  }
+  .plant-name {
+    font-size: 18px;
+  }
+  .plant-price {
+    font-size: 16px;
+  }
+  .plant-cart-button {
+    padding: 15px 30px;
+    width: 171px;
+  }
 }
