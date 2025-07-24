@@ -143,6 +143,32 @@ i.fa-solid.fa-cart-shopping {
   margin-top: 30px;
 }
 
+/* Plants Lover Styles */
+img.badge {
+  width: 286px;
+  position: relative;
+  left: 347px;
+  top: 170px;
+}
+.plants-lover-container {
+  display: flex;
+}
+.plants-lover-content {
+  margin: 38px 0 38px 60px;
+}
+h1.plants-lover-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.plants-lover-content ul li {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: var(--font-family);
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
 /* Responsive Styles */
 /* Extra small (phones) */
 @media (max-width: 575.98px) {
@@ -206,5 +232,26 @@ i.fa-solid.fa-cart-shopping {
   .plant-cart-button {
     padding: 15px 30px;
     width: 171px;
+  }
+  /* Plants Lover Section */
+  section.plants-lover {
+    margin: 40px 15px 143px 15px;
+  }
+  .plants-lover-container {
+    flex-direction: column;
+  }
+  .plants-lover-content {
+    margin: 18px 0 0 0;
+  }
+  h1.plants-lover-title {
+    font-size: 24px;
+    margin: 0 0 16px 0;
+  }
+  .plants-lover-content ul {
+    padding: 0 0 0 20px;
+  }
+  .plants-lover-content ul li {
+    font-size: 14px;
+    margin-bottom: 16px;
   }
 }
