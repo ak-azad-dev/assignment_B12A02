@@ -166,6 +166,7 @@ img.badge {
   position: relative;
   left: 347px;
   top: 170px;
+  background: transparent !important;
 }
 .plants-lover-container {
   display: flex;
